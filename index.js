@@ -18,7 +18,7 @@ app.use(morgan("dev"));
 app.use(require("./router/router"));
 app.use(require("./router/categoryRoutes"));
 app.use(require("./router/productRoutes"));
-app.use(express.static(path.join(__dirname, "./client/dist")));
+// app.use(express.static(path.join(__dirname, "./client/dist")));
 
 //rest api
 app.use("*", function (req, res) {
