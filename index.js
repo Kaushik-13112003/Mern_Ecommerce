@@ -20,10 +20,10 @@ app.use(require("./router/categoryRoutes"));
 app.use(require("./router/productRoutes"));
 // app.use(express.static(path.join(__dirname, "./client/dist")));
 
-//rest api
-app.use("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./client/dist/index.html"));
-});
+// //rest api
+// app.use("*", function (req, res) {
+//   res.sendFile(path.join(__dirname, "./client/dist/index.html"));
+// });
 
 //db
 require("./db/db");
